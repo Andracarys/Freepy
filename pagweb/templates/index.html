@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		 Enlace para busqueda de Profesionales<br>
+		 {% for x in lista_profesiones %}
+	   <a href="../testCat?c={{x.id}}">{{x.nombre_profesion}}</a><br>
+       {% endfor%}
+		 
+  </body>
+</html>
