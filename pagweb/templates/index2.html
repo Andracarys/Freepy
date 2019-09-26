@@ -178,9 +178,9 @@
             <div class="ftco-footer-widget mb-4">
             	<h2 class="ftco-heading-2">Sugerencias</h2>
             	<div class="block-23 mb-3">
-	             <form action="" method="post">
+	             <form method="GET" action="result.php">
                  <div>
-                   <textarea name="comentarios" id="comentarios" style="width:80%;height:70px;padding:5%;font-size:1em;background-color:rgba(255, 217, 0, 0.815);"> Dejanos tus sugerencias
+                   <textarea name="sugerencias" id="sugerencias" style="width:80%;height:70px;padding:5%;font-size:1em;background-color:rgba(255, 217, 0, 0.815);">Dejanos tus sugerencias
                    </textarea>
                  </div>
                  <input type="submit" value="Enviar sugerencias"
@@ -220,5 +220,9 @@
   <script src="/static/js/scrollax.min.js"></script>
   <script src="/static/js/main.js"></script>
     
+    <?php
+      echo "Tus sugerencias: ". $_GET["sugerencias"];
+    ?>
+
   </body>
 </html>
